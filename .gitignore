@@ -1,1 +1,29 @@
+# Kinesis config
 .config/SmartSetMasterErgo (Mac)
+
+# Compiled Python files
+*.pyc
+
+# Folder view configuration files
+.DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# I create .TODO files in my repos to manage a personal project TODO list
+.TODO
+ 
+# And I create .extra folders all the time for personal stuff in git repos
+.extra
+
+# Vim auto-generated files
+.netrwhist
+
+# Claude creates these files automatically
+**/.claude/settings.local.json
