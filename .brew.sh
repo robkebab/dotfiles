@@ -1,0 +1,100 @@
+#!/usr/bin/env bash
+
+# Install command-line tools using Homebrew.
+
+# Make sure we’re using the latest Homebrew.
+brew update
+
+# Upgrade any already-installed formulae.
+brew upgrade
+
+# Save Homebrew’s installed location.
+BREW_PREFIX=$(brew --prefix)
+
+# Install GNU core utilities (those that come with macOS are outdated).
+# Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
+# brew install coreutils
+# ln -s "${BREW_PREFIX}/bin/gsha256sum" "${BREW_PREFIX}/bin/sha256sum"
+
+# Install some other useful utilities like `sponge`.
+# brew install moreutils
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
+# brew install findutils
+# Install GNU `sed`, overwriting the built-in `sed`.
+# brew install gnu-sed
+
+# Install zsh.
+# brew install zsh
+
+# Switch to using brew-installed zsh as default shell
+# if ! fgrep -q "${BREW_PREFIX}/bin/zsh" /etc/shells; then
+#   echo "${BREW_PREFIX}/bin/zsh" | sudo tee -a /etc/shells
+#   chsh -s "${BREW_PREFIX}/bin/zsh"
+# fi
+
+# Install `wget`
+# brew install wget
+
+# Install GnuPG to enable PGP-signing commits.
+# brew install gnupg
+# brew link --overwrite gnupg
+
+# Install more recent versions of some macOS tools.
+brew install vim
+brew install git
+brew link --overwrite git
+brew install grep
+brew install openssh
+brew install screen
+brew install less # recommended for git-delta
+brew link --overwrite less
+brew install python@3.12
+brew link --overwrite python@3.12
+
+# Install other useful binaries.
+# brew install 1password-cli
+# brew install ast-grep
+# brew install bat
+# brew install deno
+brew install fd
+# brew install ffmpeg
+brew install fzf
+# brew install gh
+# brew install gifsicle
+# brew install git-delta
+# brew install git-lfs
+# brew install htop
+# brew install httpie
+brew install imagemagick
+# brew install jq
+# brew install kcat
+brew install lazygit
+# brew install librdkafka
+# brew install mosh
+brew install neovim
+# brew install nmap
+# brew install nq
+# brew install pngcrush
+# brew install postgresql
+# brew install redis
+# brew install ripgrep
+# brew install speedtest
+brew install starship
+# brew install tailscale
+brew install tmux
+# brew install tree
+# brew install watchman
+# brew install wifi-password
+# brew install zoxide
+# brew install zstd
+
+# Tools managed outside of brew.sh but needed by dotfiles
+# brew install direnv
+# brew install eza
+brew install fnm
+
+# Remove outdated versions from the cellar.
+brew cleanup
+
+# Mine
+brew install --cask font-fira-code-nerd-font
