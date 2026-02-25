@@ -1,18 +1,8 @@
 # Deps
 source ~/.zalias
 
-# User config
-
-## Load Version Control System
-autoload -Uz vcs_info
-precmd() { vcs_info }
-
-zstyle ':vcs_info:git:*' formats '%b '
-
-setopt PROMPT_SUBST
-PROMPT='▲  %F{4}${(%):-%1~}/%f %F{yellow}$(vcprompt -f "(%b) ")%f'
-# PROMPT='%F{14}%*%f %F{4}%~%f %F{13}${vcs_info_msg_0_}%f%F{15}▲%f '
-
+# Enable starship
+eval "$(starship init zsh)"
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
