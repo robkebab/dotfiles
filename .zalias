@@ -1,0 +1,33 @@
+#!/usr/bin/env zsh
+
+# navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
+# browser
+alias chrome='/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome'
+
+# ip
+# alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
+
+# git
+alias gprm='git pull --rebase origin main'
+
+# Trim new lines and copy to clipboard
+# alias c="tr -d '\n' | pbcopy"
+
+# Lock the screen (when going AFK)
+alias afk="pmset displaysleepnow"
+
+# Reload the shell (i.e. invoke as a login shell)
+alias reload="exec ${SHELL} -l"
+
+# Print each PATH entry on a separate line
+alias path='echo -e ${PATH//:/\\n}'
+
+# other common utils
+alias p="pnpm"
+alias t="turbo"
+alias n="nvim"
