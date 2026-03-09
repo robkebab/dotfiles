@@ -27,3 +27,5 @@ Thumbs.db
 
 # Claude creates these files automatically
 **/.claude/settings.local.json
+/.config/opencode/oh-my-opencode.json.bak.2026-03-07T01-26-41-894Z
+/.config/opencode/opencode.json.bak
