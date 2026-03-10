@@ -16,8 +16,6 @@ font-family = GeistMono NF
 macos-icon = retro
 keybind = ctrl+d=scroll_page_lines:1 
 keybind = ctrl+u=scroll_page_lines:-1 
-keybind = shift+]=scroll_page_lines:10
-keybind = shift+[=scroll_page_lines:-10
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:down
 keybind = ctrl+k=goto_split:up
